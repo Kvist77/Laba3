@@ -59,7 +59,19 @@ namespace Lab3
             {
                 x4 = x1 - x2 + x3;
                 x = x4;
-                z = Math.Pow(x, 4) - 14 * Math.Pow(x, 3) + 60 * Math.Pow(x, 2) - 70 * x;
+                if (func == 1)
+                {
+                    z = Function1(x);
+                }
+                else if (func == 2)
+                {
+                    z = Function2(x);
+                }
+                else if (func == 3)
+                {
+                    z = Function3(x);
+                }
+
                 f4 = z;
                 if (f4 > f2)
                 {
